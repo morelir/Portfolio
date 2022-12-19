@@ -6,7 +6,7 @@
   margin-left: 0;
   position: absolute;
   right: 0;
-  overflow: hidden;
+  
 }
 
 .cubespinner {
@@ -56,6 +56,26 @@
     transform: rotateX(-90deg) translateZ(100px);
     color: #ec4d28;
   }
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .stage-cube-cont {
+    position: relative;
+    width: 200px;
+    height: auto;
+    box-sizing: border-box;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    
+  }
+
+
+
+
 }
 
 @keyframes spincube {
