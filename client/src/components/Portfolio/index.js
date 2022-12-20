@@ -51,7 +51,7 @@ const Portfolio = () => {
               className="btn"
               onClick={() =>
                 window.open(
-                  `https://github.com/morelir/Electronic-Store/blob/main/README.md`
+                  `https://test-9b5eb.web.app/`
                 )
               }
             >
