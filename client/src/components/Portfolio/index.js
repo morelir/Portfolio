@@ -49,11 +49,7 @@ const Portfolio = () => {
             </h4> */}
             <button
               className="btn"
-              onClick={() =>
-                window.open(
-                  `https://test-9b5eb.web.app/`
-                )
-              }
+              onClick={() => window.open(`https://test-9b5eb.web.app/`)}
             >
               View
             </button>
@@ -82,7 +78,6 @@ const Portfolio = () => {
           </div>
         </div>
 
-
         <div className="image-box">
           <img src={cinemaImg} className="portfolio-image" alt="portfolio" />
           <div className="content">
@@ -109,14 +104,16 @@ const Portfolio = () => {
   return (
     <>
       <div className="container portfolio-page">
-        <h1 className="page-title">
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={'Portfolio'.split('')}
-            idx={15}
-          />
-        </h1>
-        <div>{renderPortfolio(portfolio)}</div>
+        <div className="text-zone">
+          <h1 className="page-title">
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={'Portfolio'.split('')}
+              idx={15}
+            />
+          </h1>
+          <>{renderPortfolio(portfolio)}</>
+        </div>
       </div>
       <Loader type="pacman" />
     </>
