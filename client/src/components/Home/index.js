@@ -66,7 +66,7 @@ const Home = () => {
               CONTACT ME
             </Link>
           </div>
-          <HeroImage />
+          {/* <HeroImage /> */}
         </div>
         {/* <Logo /> */}
       </div>
