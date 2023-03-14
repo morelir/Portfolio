@@ -45,14 +45,12 @@ const About = () => {
           <p>
             My hands-on work experience has allowed me to hone the development
             of my visual design skill and Knowledge of coding languages such as
-            HTML, CSS, JavaScript, React, Node, MongoDB etc. I am eager for the
-            opportunity to learn from and contribute to your team by applying my
-            motivation, collaboration, and problem-solving skills.
-          
+            HTML, CSS, JavaScript, React, Node, MongoDB etc. 
           </p>
+
           <p>
             If I need to define myself in one sentence that would be a family
-            person, problem solver, loves to workout and tech-obsessed!!!
+            person, problem solver, independent developer and tech-obsessed!!!
           </p>
         </div>
 
