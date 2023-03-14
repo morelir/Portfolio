@@ -1,0 +1,24 @@
+.hero-img-container {
+  position: relative;
+  max-width: 420px;
+
+  .hero-img {
+    width: 325px;
+    height: 275px;
+    border: 1px solid #ffd700;
+    border-radius: 50px;
+    background: radial-gradient(ellipse at bottom, #354c65 0%, #090a0f 100%);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-img-container {
+    order: -1;
+
+    .hero-img {
+      width: 225px;
+      height: 175px;
+    }
+  }
+}

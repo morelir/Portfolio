@@ -19,6 +19,10 @@
   font-family: 'La Belle Aurore', cursive;
 }
 
+.top-tag-html {
+  margin-left: -20px;
+}
+
 .bottom-tag-html {
   margin-left: -20px;
 }
@@ -41,60 +45,59 @@
 .container.contact-page,
 .container.about-page,
 .container.portfolio-page {
-  
-    h1 {
-      font-size: 53px;
-      font-family: 'Coolvetica';
+  h1 {
+    font-size: 53px;
+    font-family: 'Coolvetica';
+    color: #ffd700;
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    left: -10px;
+
+    &:before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore', cursive;
       color: #ffd700;
-      font-weight: 400;
-      margin-top: 0;
-      position: relative;
-      margin-bottom: 40px;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -10px;
       left: -10px;
-
-      &:before {
-        content: '<h1>';
-        font-family: 'La Belle Aurore', cursive;
-        color: #ffd700;
-        font-size: 18px;
-        position: absolute;
-        margin-top: -10px;
-        left: -10px;
-        opacity: 0.6;
-        line-height: 18px;
-      }
-
-      &:after {
-        content: '<h1/>';
-        font-family: 'La Belle Aurore', cursive;
-        color: #ffd700;
-        font-size: 18px;
-        line-height: 18px;
-        position: absolute;
-        left: -30px;
-        bottom: -20px;
-        margin-left: 20px;
-        opacity: 0.6;
-      }
+      opacity: 0.6;
+      line-height: 18px;
     }
 
-    p {
-      font-size: 13px;
-      color: #fff;
-      font-family: sans-serif;
-      font-weight: 300;
-      max-width: fit-content;
-      animation: pulse 1s;
-      &:nth-of-type(1) {
-        animation-delay: 1.1s;
-      }
-      &:nth-of-type(2) {
-        animation-delay: 1.2s;
-      }
-      &:nth-of-type(3) {
-        animation-delay: 1.3s;
-      }
+    &:after {
+      content: '</h1>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #ffd700;
+      font-size: 18px;
+      line-height: 18px;
+      position: absolute;
+      left: -30px;
+      bottom: -20px;
+      margin-left: 20px;
+      opacity: 0.6;
     }
+  }
+
+  p {
+    font-size: 13px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 300;
+    max-width: fit-content;
+    animation: pulse 1s;
+    &:nth-of-type(1) {
+      animation-delay: 1.1s;
+    }
+    &:nth-of-type(2) {
+      animation-delay: 1.2s;
+    }
+    &:nth-of-type(3) {
+      animation-delay: 1.3s;
+    }
+  }
 
   .text-zone {
     position: absolute;
@@ -117,6 +120,12 @@
 @media screen and (max-width: 1200px) {
   .page {
     position: initial;
+  }
+
+  .tags,
+  h1:before,
+  h1:after {
+    display: none;
   }
 
   .container {
@@ -147,9 +156,14 @@
         margin-top: 20px;
       }
 
+      .images-container {
+        margin-left: 0px;
+        grid-template-columns: 1fr 1fr;
+      }
+
       .image-box {
-        height: 200px;
-        max-width: calc(50% - 10px);
+        height: 300px;
+        // max-width: calc(50% - 10px);
       }
     }
   }
@@ -161,3 +175,20 @@
     overflow: visible;
   }
 }
+
+
+
+@media screen and (max-width: 478px) {
+  .container {
+    &.portfolio-page { 
+
+      .images-container{
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+  }
+  
+}
+

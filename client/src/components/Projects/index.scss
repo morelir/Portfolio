@@ -16,12 +16,14 @@
   }
 
   .images-container {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 20px;
+    // flex-wrap: wrap;
     padding-bottom: 100px;
     margin-left: 100px;
     // justify-content: center;
+    max-width: 1800px;
   }
 
   .image-box {
@@ -30,7 +32,7 @@
     height: 400px;
     overflow: hidden;
     border-radius: 10px;
-    max-width: calc(25% - 10px);
+    max-width: calc(100%);
 
     .portfolio-image {
       position: absolute;
@@ -121,9 +123,7 @@
     }
   }
 
-  @media screen and (max-width: 1200px) {
-    .images-container {
-      margin-left: 0px;
-    }
-  }
+  
 }
+
+

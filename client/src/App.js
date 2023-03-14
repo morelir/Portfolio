@@ -8,8 +8,7 @@ import Layout from './components/Layout'
 const Home = React.lazy(() => import('./components/Home'))
 const About = React.lazy(() => import('./components/About'))
 const Contact = React.lazy(() => import('./components/Contact'))
-
-const Portfolio = React.lazy(() => import('./components/Portfolio'))
+const Projects = React.lazy(() => import('./components/Projects'))
 
 function App() {
   return (
@@ -19,7 +18,7 @@ function App() {
         <Suspense
           fallback={
             <div className="center">
-              <Loader type="pacman" />
+              <Loader type="ball-pulse" />
             </div>
           }
         >
@@ -27,7 +26,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </Suspense>
       </Layout>

@@ -8,6 +8,11 @@ import './index.css'
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+      <div _ngcontent-rmg-c6="" class="effects">
+        <div _ngcontent-rmg-c6="" id="stars"></div>
+        <div _ngcontent-rmg-c6="" id="stars2"></div>
+        <div _ngcontent-rmg-c6="" id="stars3"></div>
+      </div>
       <App />
     </BrowserRouter>
     ,

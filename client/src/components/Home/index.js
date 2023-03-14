@@ -5,11 +5,12 @@ import AnimatedLetters from '../AnimatedLetters'
 import LogoTitle from '../../assets/images/logo-m.png'
 import Logo from './Logo'
 import './index.scss'
+import HeroImage from './HeroImage/HeroImage'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = ['o','r']
+  const nameArray = ['o', 'r']
   const jobArray = [
     'w',
     'e',
@@ -36,38 +37,41 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
-        <div className="text-zone">
-          <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
-            <br />
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
-            <img
-              src={LogoTitle}
-              alt="JavaScript Developer Name, Web Developer Name"
-            />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={nameArray}
-              idx={15}
-            />
-            <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={jobArray}
-              idx={22}
-            />
-          </h1>
-          <h2>Full Stack / Front End Developer</h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
+        <div className="text-zone flex-container">
+          <div className="home-container">
+            <h1>
+              <span className={letterClass}>H</span>
+              <span className={`${letterClass} _12`}>i,</span>
+              <br />
+              <span className={`${letterClass} _13`}>I</span>
+              <span className={`${letterClass} _14`}>'m</span>
+              <img
+                src={LogoTitle}
+                alt="JavaScript Developer Name, Web Developer Name"
+              />
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={nameArray}
+                idx={15}
+              />
+              <br />
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={jobArray}
+                idx={22}
+              />
+            </h1>
+            <h2>Full Stack / Front End Developer</h2>
+            <Link to="/contact" className="flat-button">
+              CONTACT ME
+            </Link>
+          </div>
+          <HeroImage />
         </div>
-        <Logo />
+        {/* <Logo /> */}
       </div>
-
-      <Loader type="pacman" />
+      <Loader type="ball-pulse" />
+      {/* <Loader type="pacman" /> */}
     </>
   )
 }
