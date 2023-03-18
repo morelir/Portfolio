@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 import {
-  faAngular,
+  faReact,
   faCss3,
   faGitAlt,
   faHtml5,
   faJsSquare,
-  faReact,
+  faNodeJs,
 } from '@fortawesome/free-brands-svg-icons'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
@@ -33,7 +33,7 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a very ambitious full-stack / front-end developer looking for a
+            I'm a very ambitious full-stack / front-end developer looking for an
             opportunity to work with the latest technologies on challenging and
             diverse projects.
           </p>
@@ -57,7 +57,7 @@ const About = () => {
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
-              <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+              <FontAwesomeIcon icon={faNodeJs} color="#64995f" />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
