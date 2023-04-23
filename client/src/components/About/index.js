@@ -33,19 +33,15 @@ const About = () => {
             />
           </h1>
           <p>
-            I'm a very ambitious full-stack / front-end developer looking for an
-            opportunity to work with the latest technologies on challenging and
-            diverse projects.
-          </p>
-          <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
+            I am a Full-Stack web developer having experience in Backend &
+            Frontend development. Well-organized person, independent with high
+            attention to detail.
           </p>
 
           <p>
-            My hands-on work experience has allowed me to hone the development
-            of my visual design skill and Knowledge of coding languages such as
-            HTML, CSS, JavaScript, React, Node, MongoDB etc. 
+            My hands-on work experience has allowed me to hone my programming
+            skills and Knowledge of coding languages such as HTML5, CSS3,
+            JavaScript, React, Node.js, Express, MongoDB etc.
           </p>
 
           <p>
